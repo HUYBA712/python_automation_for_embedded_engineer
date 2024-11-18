@@ -8,7 +8,7 @@ THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 )"
 
 # install core and development Python dependencies into the currently activated venv
 function install {
-    pip install --upgrade pip
+    python.exe -m pip install --upgrade pip
     pip install pre-commit
     # pre-commit autoupdate
 }
