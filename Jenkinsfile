@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh'''
                 source $WORKSPACE/.venv/Scripts/activate
-                # sed -i 's/\r$//' run.sh
+                sed -i 's/\r$//' run.sh
                 make install
                 make lint-ci
                 '''
